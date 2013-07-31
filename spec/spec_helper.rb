@@ -1,17 +1,5 @@
 require 'bundler/setup'
 
-require 'settingslogic'
-
-class Settings < Settingslogic
-  source 'settings.yml'
-  namespace 'test'
-  load!
-
-  def jpb_customer_nos
-    jpb.customer_no.split('-')
-  end
-end
-
 require 'capybara/rspec'
 require 'capybara-screenshot'
 require 'capybara-screenshot/rspec'
@@ -27,3 +15,16 @@ Capybara.configure do |c|
 end
 
 Dir.glob('spec/support/**/*.rb') {|f| load f }
+
+
+require 'settingslogic'
+
+class Settings < Settingslogic
+  source 'settings.yml'
+  namespace 'test'
+  load!
+
+  def jpb_customer_nos
+    jpb.customer_no.split('-')
+  end
+end
