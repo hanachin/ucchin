@@ -1,6 +1,16 @@
 defaults: &defaults
   jpb:
     customer_no: 1234-5678-90000
+    aikotoba:
+      -
+        q: 人生宇宙すべての答え
+        a: 42
+      -
+        q: 今一番食べたいそばは？
+        a: ソーキそば
+      -
+        q: 飲み過ぎには？
+        a: うっちん
 
 test:
   <<: *defaults
