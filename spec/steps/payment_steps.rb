@@ -1,3 +1,3 @@
 step '家賃は:jpyである' do |jpy|
-  jpy
+  @rent = jpy
 end
