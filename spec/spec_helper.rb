@@ -1,5 +1,17 @@
 require 'bundler/setup'
 
+require 'settingslogic'
+
+class Settings < Settingslogic
+  source 'settings.yml'
+  namespace 'test'
+  load!
+
+  def customer_nos
+    customer_no.split('-')
+  end
+end
+
 require 'capybara/rspec'
 require 'capybara-screenshot'
 require 'capybara-screenshot/rspec'
