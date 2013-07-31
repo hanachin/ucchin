@@ -26,4 +26,4 @@ Capybara.configure do |c|
   c.save_and_open_page_path = 'tmp'
 end
 
-Dir.glob('spec/support/**/*.rb') {|f| load f, true }
+Dir.glob('spec/support/**/*.rb') {|f| load f }
