@@ -1,6 +1,7 @@
 defaults: &defaults
   jpb:
     customer_no: 1234-5678-90000
+    password: Abracadabra
     aikotoba:
       -
         q: 人生宇宙すべての答え
