@@ -7,8 +7,8 @@ class Settings < Settingslogic
   namespace 'test'
   load!
 
-  def customer_nos
-    customer_no.split('-')
+  def jpb_customer_nos
+    jpb.customer_no.split('-')
   end
 end
 

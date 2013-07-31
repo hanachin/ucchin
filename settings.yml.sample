@@ -1,5 +1,6 @@
 defaults: &defaults
-  customer_no: 1234-5678-90000
+  jpb:
+    customer_no: 1234-5678-90000
 
 test:
   <<: *defaults
