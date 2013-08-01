@@ -18,8 +18,8 @@ steps_for :jpb do
   end
 
   step 'もし合言葉入力画面が表示されていたら、合言葉を入力し次へすすむ' do
-    while aikotoba = Settings.jpb.aikotoba.select {|aikotoba| page.has_content?(aikotoba["q"]) }.first
-      fill_in 'aikotoba', with: aikotoba["a"]
+    while aikotoba = Settings.jpb.aikotoba.select {|aikotoba| page.has_content?(aikotoba['q']) }.first
+      fill_in 'aikotoba', with: aikotoba['a']
       click_on '次へ'
       sleep 1
     end
