@@ -1,6 +1,7 @@
 steps_for :jpb do
   step 'ゆうちょ銀行のサイトを表示する' do
     visit 'http://www.jp-bank.japanpost.jp/'
+    sleep 1
   end
 
   step 'ログインボタンをクリックする' do
